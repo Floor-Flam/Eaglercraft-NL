@@ -86,7 +86,7 @@ goto :eof
 :disclaimer
 echo =============================================================
 echo                    EAGLERCRAFT CAMOUFLAGE
-echo                        version 0.1.2
+echo                        version 1.0.0
 echo                   Copyright Florian Harbers
 echo  Alle Rechten Voorbehouden - Alleen voor Persoonlijk Gebruik
 echo =============================================================
