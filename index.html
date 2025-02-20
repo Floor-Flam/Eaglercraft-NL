@@ -15,11 +15,11 @@
 
     const countdown = setInterval(() => {
         timeLeft--;
-        timerElement.textContent = timeLeft;
+        timerElement.innerHTML = timeLeft;
 
         if (timeLeft <= 0) {
             clearInterval(countdown);
-            timerElement.textContent = "0";
+            timerElement.innerHTML = "0";
             document.location.href = "https://floor-flam.github.io/Eaglercraft-NL/download";
         }
     }, 1000);
