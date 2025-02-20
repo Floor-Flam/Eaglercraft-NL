@@ -10,27 +10,19 @@
       <h3>Je wordt nu doorgezonden binnen <span id="klok">5</span> naar onze downloadpagina!</h3>  
 
       <script>
-        function startTimer(duration, display) {
-    var timer = duration, seconds;
-    setInterval(function () {
-        seconds = parseInt(timer % 60, 10);
+    let timeLeft = 5;
+    const timerElement = document.getElementById('klok');
 
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+    const countdown = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
 
-        display.textContent = seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-            window.location.href = "https://floor-flam.github.io/Eaglercraft-NL/download"
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            timerElement.textContent = "0";
+            document.location.href = "https://floor-flam.github.io/Eaglercraft-NL/download";
         }
     }, 1000);
-}
-
-window.onload = function () {
-    var fiveMinutes = 60 * 0,05,
-        display = document.querySelector('#klok');
-    startTimer(fiveMinutes, display);
-};
       </script>
     </body>
 </html>
