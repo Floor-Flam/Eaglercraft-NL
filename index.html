@@ -7,23 +7,21 @@
     </head>
     <body style="text-align:center">
         <h1>Welkom!</h1>
-      <h3>Je wordt nu doorgezonden binnen <span id="klok">00:05</span> naar onze downloadpagina!</h3>  
+      <h3>Je wordt nu doorgezonden binnen <span id="klok">5</span> naar onze downloadpagina!</h3>  
 
       <script>
         function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
+    var timer = duration, seconds;
     setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = minutes + ":" + seconds;
+        display.textContent = seconds;
 
         if (--timer < 0) {
             timer = duration;
-            window.location.href = "/download"
+            window.location.href = "https://floor-flam.github.io/Eaglercraft-NL/download"
         }
     }, 1000);
 }
