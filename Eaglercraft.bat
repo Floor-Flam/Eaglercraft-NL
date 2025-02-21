@@ -66,13 +66,13 @@ cscript wait.vbs 1
 if %gamemode%==1 (
 start "" "Eaglercraft.html"
 ) else if %gamemode%==2 (
-start "" "Eaglercraft BETA 1.0 [JFSG leerlingen].html"
+start "" "Eaglercraft [JFSG leerlingen].html"
 ) else if %gamemode%==3 (
-start "" "Eaglercraft BETA 1.0 [Magister].html"
+start "" "Eaglercraft [Magister].html"
 ) else if %gamemode%==4 (
-start "" "Eaglercraft BETA 1.0 [ITS].html"
+start "" "Eaglercraft [ITS].html"
 ) else if %gamemode%==5 (
-start "" "Eaglercraft BETA 1.0 [SG].html"
+start "" "Eaglercraft [SG].html"
 )
 exit /b
 ) else (
